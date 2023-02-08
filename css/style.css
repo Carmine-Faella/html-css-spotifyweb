@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Regole di debug*/
+
+.debug main{
+    background-color: rgb(20,25,34);
+}
+
+.debug footer{
+    background-color: rgb(39, 39, 39);
+}
+
+.debug .sidebar{
+    background-color: black;
+}
+
+.debug .top-bar{
+    background-color: black;
+    height: 70px;
+}
+
+.debug nav{
+    height: 70px;
+    background-color: red;
+    margin-top: 80px;
+}
+
+.debug .container{
+    background-color: white;
+    height: 150px;
+}
+
+/*Utility*/
+
+.flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.overflow{
+    overflow-y: scroll;
+}
+
+.white-color{
+    color: white;
+}
+
+h2{
+    padding: 2.5rem 1rem;
+}
+
+/*Regole CSS*/
+
+.contain{
+    height: calc(100vh - 80px);
+    width: calc(100% - 50px);
+    background-color: var(--main-color);
+}
+
+li{
+    list-style: none;
+}
+
+footer{
+    height: 80px;
+}
+
+.sidebar{
+    width: 50px;
+    height: calc(100vh - 80px);
+}
+
+.top-bar{
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    left: 50px;
+    width: calc(100% - 50px);
+}
+
+.contain li{
+    width: 50%;
+    padding: 1rem;
+}
+
+
+
+
+/*Responsive*/
+
+@media screen and (min-width:576px) {
+
+    .sidebar{
+        width: 250px;
+    }
+    
+    .contain{
+        width: calc(100% - 250px);
+    }
+
+    .top-bar{
+        position: fixed;
+        top: 0;
+        left: 250px;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    #recent-pl li{
+        width: calc(100% / 4);
+    }
+     
+}
+
+@media screen and (min-width:992px) {
+     
+    #recent-pl li{
+        width: calc(100% / 6);
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+     
+}
