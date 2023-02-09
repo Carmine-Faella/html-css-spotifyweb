@@ -15,7 +15,7 @@
 
             <aside class="sidebar flex overflow-hidden flex-column">
 
-                <div class="sidebar-top flex flex-column">
+                <div class="sidebar-top flex flex-column overflow-hidden">
 
                     <div id="logo">
                         <a href="#"><img class="logo-small" src="img/logo-small.svg" alt="logo-small"></a>
@@ -32,11 +32,11 @@
     
                     <h4 class="white-color">Playlist</h4>
 
-                    <div><a href="#" class="white-color"><i class="fa-solid fa-plus"></i><span class="opacity">Crea Playlist</span></a></div>
+                    <div><a href="#" class="white-color"><i class="fa-solid fa-plus icon"></i><span class="opacity">Crea Playlist</span></a></div>
 
-                    <div class="playlist overflow-hidden flex-column flex">
+                    <div class="playlist overflow flex-column flex">
 
-                        <ul class="overflow">
+                        <ul>
                             <li><a href="#" class="white-color opacity">Nome Playlist</a></li>
                             <li><a href="#" class="white-color opacity">Nome Playlist</a></li>
                             <li><a href="#" class="white-color opacity">Nome Playlist</a></li>
@@ -53,9 +53,9 @@
 
                 <div class="sidebar-bottom flex-column flex">
 
-                    <div class="download opacity"><a class=" white-color" href="#"><img src="img/download.svg">Installa app</a></div>
+                    <div class="download opacity"><a class=" white-color" href="#"><img src="img/download.svg"><span>Installa app</span></a></div>
 
-                    <div class="white-color profile"><img src="img/profile.svg"><strong>John Doe</strong></div>
+                    <div class="profile"><a class=" white-color" href="#"><img src="img/profile.svg"><span><strong>John Doe</strong></span></a></div>
 
                 </div> 
 
@@ -70,12 +70,12 @@
                 <nav class="text-center">
 
                     <ul>
-                        <li>IN EVIDENZA</li>
-                        <li>PODCAST</li>
-                        <li>CLASSIFICHE</li>
-                        <li>GENERI E MOOD</li>
-                        <li>NUOVE USCITE</li>
-                        <li>SCOPRI</li>
+                        <li><a href="#" class="white-color opacity">IN EVIDENZA</a></li>
+                        <li><a href="#" class="white-color opacity">PODCAST</a></li>
+                        <li><a href="#" class="white-color opacity">CLASSIFICHE</a></li>
+                        <li><a href="#" class="white-color opacity">GENERI E MOOD</a></li>
+                        <li><a href="#" class="white-color opacity">NUOVE USCITE</a></li>
+                        <li><a href="#" class="white-color opacity">SCOPRI</a></li>
                     </ul>
 
                 </nav>
@@ -162,6 +162,55 @@
         </main>
 
         <footer>
+
+            <div class="flex align-center foot-container">
+
+                <div class="foot-left col flex">
+
+                    <img src="img/sinister.jpeg" alt="sinister">
+                    <div>
+                        <h5 class="white-color">Sinister</h5>
+                        <span class="text-grey">Brano nome</span>
+                    </div>
+                    <div class="icon-foot">
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-regular fa-folder"></i></a>
+                    </div>
+    
+                </div>
+    
+                <div class="foot-center flex flex-column col">
+    
+                    <div class="text-center">
+    
+                        <a href="#"><i class="fa-solid fa-arrows-turn-to-dots"></i></a>
+                        <a href="#"><i class="fa-solid fa-caret-left"></i></a>
+                        <a href="#"><i class="fa-regular fa-circle-play"></i></a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a>
+    
+                    </div>
+    
+                    <div class="flex">
+    
+                        <span class="white-color minute">0:35</span><div class="bar-big opacity"></div><span class="white-color minute">4:35</span>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="foot-right flex col">
+    
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                    <a href="#"><i class="fa-solid fa-desktop"></i></a>
+                    <a href="#"><i class="fa-solid fa-volume-high"></i></a>
+                    <div class="bar"></div>
+    
+                </div>
+
+            </div>
+
+            
 
         </footer>
         

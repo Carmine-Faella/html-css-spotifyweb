@@ -13,6 +13,10 @@
     --color-grey:rgb(94,96,101);
 }
 
+.color-grey{
+    color: var(--color-grey);
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -67,6 +71,10 @@ main{
 
 .opacity{
     opacity: 0.5;
+}
+
+.align-center{
+    align-items: center;
 }
 
 /*Regole CSS*/
@@ -130,7 +138,6 @@ footer{
 }
 
 .sidebar-bottom .download{
-    border-bottom: 1px solid white;
     padding-bottom: 0.5rem;
     font-size: 0.8rem;
     vertical-align: middle;
@@ -211,7 +218,7 @@ aside nav{
     padding: 2rem 0;
 }
 
-aside nav span{
+aside span{
     display: none;
 }
 
@@ -227,6 +234,56 @@ aside i{
     padding: 0.5rem 0;
 }
 
+.playlist, aside h4, .fa-solid.fa-plus.icon{
+    display: none;
+}
+
+.foot-container{
+    justify-content: space-between;
+    height: 80px;
+}
+
+footer img{
+    height: 3.5rem;
+    padding: 0 1rem;
+}
+
+.foot-left a{
+    color: white;
+    opacity: 0.5;
+    padding-left: 1.5rem;
+    display: block;
+}
+
+.foot-center a{
+    color: white;
+    padding: 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.foot-right a{
+    color: white;
+    padding: 0 0.6rem;
+    opacity: 0.5;
+    font-size: 0.7rem;
+}
+
+.bar-big{
+    height: 0.2rem;
+    width: 400px;
+    background-color: grey;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.minute{
+    font-size: 0.5rem;
+    padding: 0.7rem 2rem;
+}
+
+.foot-center{
+    width: 60%
+}
 
 /*Responsive*/
 
@@ -259,8 +316,16 @@ aside i{
         display: block;
     }
 
-    aside nav span{
+    aside span{
         display: inline;
+    }
+
+    .playlist, aside h4, .fa-solid.fa-plus.icon{
+        display: inline-block;
+    }
+
+    .sidebar-bottom .download{
+        border-bottom: 1px solid white;
     }
 }
 
