@@ -21,6 +21,10 @@ body{
     display: flex;
 }
 
+.flex-column{
+    flex-direction: column;
+}
+
 .wrap{
     flex-wrap: wrap;
 }
@@ -29,11 +33,15 @@ body{
     overflow-y: scroll;
 }
 
+.overflow-hidden{
+    overflow-y: hidden;
+}
+
 .white-color{
     color: white;
 }
 
-h5{
+h5, h4{
     padding: 0.4rem 0;
 }
 
@@ -45,12 +53,20 @@ a{
     text-decoration: none;
 }
 
-nav{
+.contain nav{
     margin-top: 80px;
 }
 
 .text-center{
     text-align: center;
+}
+
+main{
+    height: calc(100vh - 80px);
+}
+
+.opacity{
+    opacity: 0.5;
 }
 
 /*Regole CSS*/
@@ -68,8 +84,7 @@ nav{
 }
 
 .contain{
-    height: calc(100vh - 80px);
-    width: calc(100% - 50px);
+    width: calc(100% - 60px);
     background-color: var(--background-color);
 }
 
@@ -79,8 +94,46 @@ footer{
 }
 
 .sidebar{
-    width: 50px;
+    width: 60px;
     background-color: var(--background-color-aside);
+    padding: 1rem;
+}
+
+.sidebar-top{
+    height: calc(100% - 80px);
+    min-height: 400px;
+}
+
+.sidebar-bottom{
+    height: 80px;
+    justify-content: flex-end;
+}
+
+.sidebar-bottom .profile img{
+    width: 20px;
+    margin-right: 0.7rem;
+    background-color: var(--color-grey);
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.sidebar-bottom .profile{
+    padding-top: 0.5rem;
+    vertical-align: middle;
+    font-size: 0.8rem;
+}
+
+.sidebar-bottom .download img{
+    width: 0.8rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.sidebar-bottom .download{
+    border-bottom: 1px solid white;
+    padding-bottom: 0.5rem;
+    font-size: 0.8rem;
+    vertical-align: middle;
 }
 
 .top-bar{
@@ -110,7 +163,7 @@ section img{
     width: 100%;
 }
 
-nav li{
+.contain nav li{
     padding: 1rem;
     display: inline-block;
     font-size: 0.75rem;
@@ -135,6 +188,46 @@ nav li{
     border-radius: 50%;
 }
 
+.logo-small{
+    width: 2rem;
+}
+
+.logo-big{
+    display: none;
+    width: 7rem;
+}
+
+aside nav img{
+    width: 2rem;
+    vertical-align: middle;
+}
+
+aside nav li{
+    vertical-align: middle;
+    padding-bottom: 0.5rem;
+}
+
+aside nav{
+    padding: 2rem 0;
+}
+
+aside nav span{
+    display: none;
+}
+
+aside i{
+    background-color: grey;
+    color: black;
+    padding: 0.5rem;
+    margin-right: 0.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.playlist li{
+    padding: 0.5rem 0;
+}
+
+
 /*Responsive*/
 
 @media screen and (min-width:576px) {
@@ -157,6 +250,18 @@ nav li{
     section li{
         width: calc(100% / 2);
     }
+
+    .logo-small{
+        display: none;
+    }
+
+    .logo-big{
+        display: block;
+    }
+
+    aside nav span{
+        display: inline;
+    }
 }
 
 @media screen and (min-width:768px) {
@@ -164,7 +269,6 @@ nav li{
     section li{
         width: calc(100% / 4);
     }
-     
 }
 
 @media screen and (min-width:992px) {
@@ -178,3 +282,4 @@ nav li{
 @media screen and (min-width:1200px) {
      
 }
+
