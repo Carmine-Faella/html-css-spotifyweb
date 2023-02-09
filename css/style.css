@@ -291,7 +291,7 @@ footer img{
 }
 
 .bar-little{
-    width: 100px;
+    width: 5rem;
     margin-bottom: 1rem;
 }
 
@@ -300,8 +300,32 @@ footer img{
     padding: 0.7rem 2rem;
 }
 
-.foot-center{
-    width: 60%
+.layover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.layover{
+    display: none;
+}
+
+#recent-pl a:hover .layover{
+    display: flex;
+}
+
+.container{
+    position: relative;
+}
+
+#recent-pl i{
+    color: white;
+    font-size: 3rem;
 }
 
 /*Responsive*/
