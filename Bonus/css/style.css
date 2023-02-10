@@ -468,11 +468,13 @@ section ul{
     }
 }
 
-@media screen and (min-width:992px) {
-     
-}
+@media screen and (max-height: 300px) {
+    .top-bar{
+        display: none;
+    }
 
-@media screen and (min-width:1200px) {
-
+    .contain nav{
+        margin-top: 1rem;
+    }
 }
 
