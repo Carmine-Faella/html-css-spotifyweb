@@ -82,40 +82,55 @@ main{
     padding-left: 0.5rem;
 }
 
+.padd1{
+    padding: 0.5rem 1rem;
+}
+
+.under{
+    position: relative;
+    }
+   
+.under:after {
+    content: "";
+    background: yellowgreen;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    height: 0.2rem;
+    width: 2.5rem;
+}
+
 /*Regole CSS*/
 
-.contain nav{
-    margin-top: 80px;
+aside nav img{
+    width: 2rem;
+    vertical-align: middle;
 }
 
-
-#recent-pl h2{
-    padding: 2.5rem 0rem;
+aside nav li{
+    vertical-align: middle;
+    padding-bottom: 0.5rem;
 }
 
-#john-doe h2, #popular h2{
-    margin-top: 1rem;
+aside nav{
+    padding: 2rem 0;
 }
 
-#john-doe .text-grey, #popolar .text-grey{
-    margin-bottom: 1rem;
+aside span{
+    display: none;
 }
 
-.contain{
-    width: calc(100% - 60px);
-    background-color: var(--background-color);
-}
-
-footer{
-    height: 80px;
-    background-color: var(--background-color-foot);
-    justify-content: space-between;
+aside i{
+    background-color: grey;
+    color: black;
+    padding: 0.5rem;
+    margin-right: 0.6rem;
+    margin-bottom: 0.8rem;
 }
 
 .sidebar{
     width: 60px;
     background-color: var(--background-color-aside);
-    padding: 1rem;
 }
 
 .sidebar-top{
@@ -154,6 +169,31 @@ footer{
     vertical-align: middle;
 }
 
+.sidebar-top nav li{
+    border-left: 5px solid;
+    padding-left: 0.5rem;
+}
+
+.sidebar-top nav li:first-child{
+    border-left: 5px solid greenyellow;
+}
+
+.contain nav{
+    margin-top: 80px;
+}
+
+.contain{
+    width: calc(100% - 60px);
+    background-color: var(--background-color);
+}
+
+.contain nav li{
+    padding: 1rem;
+    display: inline-block;
+    font-size: 0.75rem;
+    color: var(--color-grey);
+}
+
 .top-bar{
     position: fixed;
     top: 0;
@@ -167,7 +207,6 @@ footer{
 }
 
 section li{
-    width: 50%;
     padding: 0.4rem;
 }
 
@@ -177,13 +216,6 @@ section{
 
 section img{
     width: 100%;
-}
-
-.contain nav li{
-    padding: 1rem;
-    display: inline-block;
-    font-size: 0.75rem;
-    color: var(--color-grey);
 }
 
 .button a{
@@ -200,6 +232,27 @@ section img{
     font-size: 0.6rem;
 }
 
+#recent-pl h2{
+    padding: 2.5rem 0rem;
+}
+
+#recent-pl a:hover .layover{
+    display: flex;
+}
+
+#recent-pl i{
+    color: white;
+    font-size: 3rem;
+}
+
+#john-doe h2, #popular h2{
+    margin-top: 1rem;
+}
+
+#john-doe .text-grey, #popolar .text-grey{
+    margin-bottom: 1rem;
+}
+
 #popolar img{
     object-fit: cover;
     border-radius: 50%;
@@ -212,32 +265,6 @@ section img{
 .logo-big{
     display: none;
     width: 7rem;
-}
-
-aside nav img{
-    width: 2rem;
-    vertical-align: middle;
-}
-
-aside nav li{
-    vertical-align: middle;
-    padding-bottom: 0.5rem;
-}
-
-aside nav{
-    padding: 2rem 0;
-}
-
-aside span{
-    display: none;
-}
-
-aside i{
-    background-color: grey;
-    color: black;
-    padding: 0.5rem;
-    margin-right: 0.6rem;
-    margin-bottom: 0.8rem;
 }
 
 .playlist li{
@@ -263,17 +290,15 @@ aside i{
     display: none;
 }
 
-#recent-pl a:hover .layover{
-    display: flex;
-}
-
 .container{
     position: relative;
+    width: 200px;
 }
 
-#recent-pl i{
-    color: white;
-    font-size: 3rem;
+footer{
+    height: 80px;
+    background-color: var(--background-color-foot);
+    justify-content: space-between;
 }
 
 .foot-left, .foot-right{
@@ -378,6 +403,10 @@ a:hover, i:hover, li:hover, .hover:hover span, .hover:hover{
     opacity: 1;
 }
 
+section ul{
+    overflow-x: scroll;
+}
+
 /*Responsive*/
 
 @media screen and (min-width:576px) {
@@ -395,10 +424,6 @@ a:hover, i:hover, li:hover, .hover:hover span, .hover:hover{
         top: 0;
         left: 250px;
         width: calc(100% - 250px);
-    }
-
-    section li{
-        width: calc(100% / 2);
     }
 
     .logo-small{
@@ -433,10 +458,6 @@ a:hover, i:hover, li:hover, .hover:hover span, .hover:hover{
 
 @media screen and (min-width:768px) {
 
-    section li{
-        width: calc(100% / 4);
-    }
-
     .foot-right{
         flex-direction: row;
     }
@@ -449,16 +470,9 @@ a:hover, i:hover, li:hover, .hover:hover span, .hover:hover{
 
 @media screen and (min-width:992px) {
      
-    section li{
-        width: calc(100% / 6);
-    }
-
 }
 
 @media screen and (min-width:1200px) {
 
-     section li{
-        width: calc(100% / 6);
-    }
 }
 
