@@ -34,11 +34,11 @@ body{
 }
 
 .justify-content{
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.text-right{
-    text-align: right;
+.align-center{
+    align-items: center;
 }
 
 .overflow{
@@ -53,7 +53,7 @@ body{
     color: white;
 }
 
-h5, h4{
+.content h5,.content h4, aside h4, aside h5{
     padding: 0.4rem 0;
 }
 
@@ -63,10 +63,6 @@ li{
 
 a{
     text-decoration: none;
-}
-
-.contain nav{
-    margin-top: 80px;
 }
 
 .text-center{
@@ -81,16 +77,16 @@ main{
     opacity: 0.5;
 }
 
-.align-center{
-    align-items: center;
-}
-
-.foot-right{
-    justify-content: end;
-    padding-right: 1rem;
+.font-size-s{
+    font-size: 0.8rem;
 }
 
 /*Regole CSS*/
+
+.contain nav{
+    margin-top: 80px;
+}
+
 
 #recent-pl h2{
     padding: 2.5rem 0rem;
@@ -195,6 +191,7 @@ section img{
     padding: 0.7rem 2.5rem;
     font-size: 0.7rem;
     text-align: right;
+    margin-right: 1rem;
 }
 
 .text-grey{
@@ -250,56 +247,6 @@ aside i{
     display: none;
 }
 
-.col{
-    min-width: calc(100% / 3);
-}
-
-footer img{
-    height: 5rem;
-    padding: 1rem;
-}
-
-.foot-left a{
-    color: white;
-    opacity: 0.5;
-    padding-left: 1.5rem;
-    display: block;
-}
-
-.foot-center a{
-    color: white;
-    padding: 0 0.5rem;
-    font-size: 1.2rem;
-}
-
-.foot-right a{
-    color: white;
-    padding: 0 0.6rem;
-    opacity: 0.5;
-    font-size: 0.7rem;
-}
-
-.bar{
-    height: 0.2rem;
-    background-color: grey;
-    border-radius: 1rem;
-    margin-top: 1rem;
-}
-
-.bar-big{
-    width: 400px;
-}
-
-.bar-little{
-    width: 5rem;
-    margin-bottom: 1rem;
-}
-
-.minute{
-    font-size: 0.5rem;
-    padding: 0.7rem 2rem;
-}
-
 .layover{
     position: absolute;
     top: 0;
@@ -327,6 +274,86 @@ footer img{
     color: white;
     font-size: 3rem;
 }
+
+.foot-left, .foot-right{
+    width: 250px;
+}
+
+.foot-center{
+    width: 100%;
+}
+
+.foot-center i{
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.foot-left img{
+    width: 80px;
+    height: 80px;
+    padding: 0.5rem ;
+}
+
+.progress-bar{
+    height: 0.5rem;
+    background-color: grey;
+    border-radius: 1rem;
+}
+
+.progress-bar .bars{
+    width: 20%;
+    height: 100%;
+    background-color: lightgray;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.player-bar{
+    width: 100%;
+}
+
+.player-minute{
+    font-size: 0.7rem;
+    padding: 0 1rem;
+}
+
+.point{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top:-5px;
+    right: 0;
+    display: none;
+}
+
+.player-bar-volume{
+    width: 40%;
+}
+
+.foot-center{
+    padding: 0 1rem;
+}
+
+.foot-right{
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.icon-foot-right i{
+    padding-bottom: 1rem;
+}
+
+.arrow-circle, .shuffle, .foot-left img{
+    display: none;
+}
+
+.icon-foot-left{
+    padding-left: 0.8rem;
+}
+
 
 /*Responsive*/
 
@@ -370,12 +397,30 @@ footer img{
     .sidebar-bottom .download{
         border-bottom: 1px solid white;
     }
+
+    .arrow-circle, .shuffle, .foot-left img{
+        display: inline-block;
+    }
+
+    .foot-center{
+        width: 60%;
+    }
+
 }
 
 @media screen and (min-width:768px) {
 
     section li{
         width: calc(100% / 4);
+    }
+
+    .foot-right{
+        flex-direction: row;
+    }
+
+    .icon-foot-right i{
+        padding: 0;
+        padding-right: 0.5rem;
     }
 }
 
@@ -388,6 +433,9 @@ footer img{
 }
 
 @media screen and (min-width:1200px) {
-     
+
+     section li{
+        width: calc(100% / 6);
+    }
 }
 
