@@ -79,6 +79,7 @@ main{
 
 .font-size-s{
     font-size: 0.8rem;
+    padding-left: 0.5rem;
 }
 
 /*Regole CSS*/
@@ -302,7 +303,7 @@ aside i{
 }
 
 .progress-bar .bars{
-    width: 20%;
+    width: 40%;
     height: 100%;
     background-color: lightgray;
     border-radius: 1rem;
@@ -322,7 +323,7 @@ aside i{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: red;
+    background-color: white;
     position: absolute;
     top:-5px;
     right: 0;
@@ -340,10 +341,12 @@ aside i{
 .foot-right{
     justify-content: flex-end;
     flex-direction: column;
+    padding-right: 0.5rem;
 }
 
 .icon-foot-right i{
     padding-bottom: 1rem;
+    padding-right: 0.5rem;
 }
 
 .arrow-circle, .shuffle, .foot-left img{
@@ -354,6 +357,26 @@ aside i{
     padding-left: 0.8rem;
 }
 
+.button:hover, .play:hover {
+    scale: 1.1;
+}
+
+a:hover, i:hover, li:hover, .hover:hover span, .hover:hover{
+    opacity: 1;
+}
+
+.player-bar:hover .point, .player-bar-volume:hover .point{
+    display: block;
+}
+
+.player-bar:hover .bars, .player-bar-volume:hover .bars{
+    background-color: green ;
+}
+
+.name-br:hover a{
+    text-decoration: underline;
+    opacity: 1;
+}
 
 /*Responsive*/
 
